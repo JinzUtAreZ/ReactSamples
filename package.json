@@ -1,0 +1,27 @@
+{
+  "name": "reactsamples",
+  "version": "1.0.0",
+  "description": "react samples",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "json-server": "json-server --watch tbldata.json --port 5000",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Mathew Uy",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "json-server": "^0.16.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "mssql": "^6.2.0",
+    "nodemon": "^2.0.4",
+    "tedious": "^8.3.0"
+  }
+}
