@@ -72,4 +72,20 @@ router.get('/prods', async (req, res) => {
   }
 });
 
+router.get('/unit_measure', async (req, res) => {
+  console.log('products-data', 'unit_measure');
+  try {
+    let conn = new sql.ConnectionPool(dbconfig.config);
+    await conn.connect().then(function (pool) {
+      var request = new sql.Request(pool);
+      request.execute('spLoad_Unit_Measurement').then(function (recordset) {
+        res.json(recordset.recordset);
+        conn.close();
+      });
+    });
+  } catch (err) {
+    res.status(400).send(err);
+  }
+});
+
 module.exports = router;

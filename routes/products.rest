@@ -8,6 +8,9 @@ GET {{host}}/api/products/cats
 ### Get products
 GET {{host}}/api/products/prods
 
+### Get unit measure
+GET {{host}}/api/products/unit_measure
+
 ### POST requests
 POST {{host}}/api/products/postdata http/1.1
 Content-Type: application/json
