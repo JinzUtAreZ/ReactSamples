@@ -42,6 +42,15 @@ cd client
    client/package.json file
 7. npm run dev
 
+# Add ons
+
+1. npm install react-data-export --save; (table to excel)
+link docu = https://www.npmjs.com/package/react-data-export
+a. npm install xlsx --save (missing in node_modules)
+<!--  testing pa lang
+2. npm install --save react-toastify
+   -->
+
 # Step by Step Git Repository
 
 git repository

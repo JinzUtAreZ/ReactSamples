@@ -19,9 +19,12 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "export-to-csv": "^0.2.1",
     "express": "^4.17.1",
     "mssql": "^6.2.0",
     "nodemon": "^2.0.4",
-    "tedious": "^8.3.0"
+    "react-data-export": "^0.6.0",
+    "tedious": "^8.3.0",
+    "xlsx": "^0.16.4"
   }
 }
